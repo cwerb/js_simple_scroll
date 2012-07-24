@@ -1,0 +1,134 @@
+/*Общие теги*/
+* {
+	margin: 0;
+	padding: 0;
+	outline-style: none;
+}
+
+table {
+	border: 0;
+	border-collapse: collapse;
+}
+
+table tr td{
+	border-bottom: 1px solid #b9b9b9;
+}
+table tr.odd {
+	background-color: #f2f2f2;
+}
+table td {
+	padding: 10px 15px;
+	color: #7d7d7d;
+	font-size: 14px;
+}
+strong {
+	color: #4d4d4d;
+	font-weight: normal;
+}
+
+
+html, body, p, input, textarea{
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+html, body {
+	height: 100%;
+	font-size: 14px;
+}
+/*\Общие теги*/
+/*Общие классы*/
+.cl {
+	clear: left;
+}
+
+.cr {
+	clear: right;
+}
+
+.ca {
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+
+.clearfix { zoom: 1; display: block; }
+.clearfix:after  {
+	content: '.';
+	clear:both;
+	display: block;
+	width: 0; height: 0;
+	overflow: hidden;
+	font-size: 0;
+}
+/*\Общие классы*/
+/*структура*/
+#index {
+	min-height: 100%;
+	position: absolute;
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#top {
+	position: relative;
+	width: 980px;
+	margin-bottom: 190px; /*высота футера с учетом наезда-отступа*/
+	min-height: 0px; /*Минимальная высота контента*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* заголовок */
+
+/* контент */
+
+/* footer */
+
+#foot {
+	bottom: 0px;
+	position: absolute;
+	height: 100px; /*высота футера*/
+	width: 100%;
+}
+
+#foot .foot-wrap {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.q-list {
+	 height: 321px;
+    overflow: hidden;
+    position: relative;
+    width: 299px;
+}
+.q-list .body {
+	height: 291px;
+    margin: 12px 0 0 14px;
+    overflow: hidden;
+    position: relative;
+    width: 276px;
+}
+.q-list .scroll-w {
+	position: relative;
+    width: 270px;
+}
+
+/* элементы, которые добавит JS { */
+.scroll-bar {
+    width: 6px;
+	background: red;
+}
+.scroll-bar s {
+	height: 37px;
+    width: 6px;
+	background: #000;
+	
+}
+/* элементы, которые добавит JS } */
