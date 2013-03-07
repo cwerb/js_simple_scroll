@@ -295,7 +295,21 @@ var scroll_lib = function($scroll_conteiner)
 		$scroll_conteiner.find('.scroll-bar s').draggable( "destroy" );
 		$scroll_conteiner.unbind('mousewheel');
 		$(this).unbind('destroy');
-	});
+	})
+    .unbind('renew').bind('renew', function()
+    {
+        var percent = get_scroll()/(conteiner_height-slider_height);
+        scroll();
+        scroll_to(percent);
+    })
+    .unbind('bottom').bind('bottom', function()
+    {
+        scroll_to(1);
+    })
+    .unbind('top').bind('top', function()
+    {
+        scroll_to(0);
+    });
 	
 	return $scroll_conteiner;
 }
