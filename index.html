@@ -32,15 +32,9 @@
 					$(function()
 					{
 						var $w = scroll_lib($('.q-list .body'));
-						
-						/*setTimeout(function()
-						{
-							$w.trigger('destroy');
-						},5000);*/
-
 
                         $('#header button').click(function(){
-                            $('.scroll-w').append("<div style='width: 200px;height: 50px;background: red;margin-bottom: 10px'></div> ")
+                            $('.scroll-w').append("<div style='width: 200px;height: 50px; background: red; margin-bottom: 10px'></div> ");
                             $w.trigger('renew');
                         });
 					});
