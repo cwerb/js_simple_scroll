@@ -232,7 +232,7 @@ var scroll_lib = function($scroll_conteiner)
 	}
 
 	/**
-		@param float	от 0 до 1
+		@param float	РѕС‚ 0 РґРѕ 1
 	**/
 	function scroll_to(part,noslide)
 	{
@@ -301,6 +301,14 @@ var scroll_lib = function($scroll_conteiner)
         var percent = get_scroll()/(conteiner_height-slider_height);
         scroll();
         scroll_to(percent);
+    })
+    .unbind('bottom').bind('bottom', function()
+    {
+        scroll_to(1);
+    })
+    .unbind('top').bind('top', function()
+    {
+        scroll_to(0);
     });
 	
 	return $scroll_conteiner;
